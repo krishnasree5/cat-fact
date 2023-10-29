@@ -10,8 +10,11 @@ app.use(express.static("public"));
 
 app.get("/", async(req, res) => {
     try {
-        const catImage = await axios.get("https://api.thecatapi.com/v1/images/search");
-        const catFact = await axios.get("https://catfact.ninja/fact");
+        //cat image response from the cat api
+        const catImage = await axios.get("https://api.thecatapi.com/v1/images/search");  
+        //cat fact response from catfact api
+        const catFact = await axios.get("https://catfact.ninja/fact"); 
+        //sending data to index.ejs
         res.render("index.ejs", {image: catImage.data[0], fact: catFact.data});
     } catch (error) {
         console.log(error);
