@@ -1,0 +1,60 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    margin: 15px 25%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 234, 234); 
+    border-radius: 30px;   
+}
+
+.container img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.container p{
+    font-size: x-large;
+    min-width: 100%;
+    text-align: center;
+}
+
+.container button{
+    padding: 20px;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+
